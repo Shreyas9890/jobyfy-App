@@ -1,0 +1,49 @@
+.card-list{
+    width: 80%;
+    align-items: center;
+    background: #3f3a3a;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    list-style: none;
+    
+}
+.link-findJb{
+    text-decoration: none;
+}
+.icon-cont{
+    display: flex;
+}
+.comp_img{
+    padding-right: 10px;
+    width: 90px;
+}
+.iconimg{
+    color: orange;
+    margin-right: 10px;
+}
+.location_intern{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.loc_img{
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+.div_span_cont{
+    padding: 10px;
+    margin-right: 10px;
+    font: 200;
+}
+.div_span_lpa{
+   padding: 10px;
+}
+.para{
+    font-size: 15px;
+    font-weight: 400;
+    color: aliceblue;
+}

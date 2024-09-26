@@ -1,0 +1,44 @@
+.log-cont {
+
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img1{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 30px;
+    filter: invert(1);
+}
+.form-cont {
+    height: 55%;
+    width: 25%;
+    border-radius: 25px;
+    background-color:rgb(49, 42, 42);
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-input{
+    width: auto;
+}
+label {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+@media (max-width:768px) {
+    .form-cont{
+        width: auto;
+        padding: 30px;
+    }
+}

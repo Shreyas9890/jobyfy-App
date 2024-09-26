@@ -1,0 +1,38 @@
+.jobs-cont{
+   
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+.fillter-jobs{
+
+    width: 30%;
+   
+}
+.find-jobs{
+    
+    width: 70%;
+  
+}
+.div_span_cont1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.ancor{
+    text-decoration: none;
+    font-size: large;
+}
+
+.navbar{
+    width: 400px;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+    background: rgb(241, 237, 237);
+    color: black;
+    display: flex;
+    justify-content: start;
+}

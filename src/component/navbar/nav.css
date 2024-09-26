@@ -1,0 +1,30 @@
+.nav-cont {
+    height: 10%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(13, 13, 13, 0.995);
+}
+
+.img-cont {
+    width: 120px;
+}
+
+.ul-cont {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.item-cont {
+    margin-right: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    text-decoration: none;
+}
