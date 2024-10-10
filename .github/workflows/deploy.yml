@@ -12,12 +12,12 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3  # Latest version, runs on Node.js 20 by default
+        uses: actions/checkout@v3  # This will run on Node.js 20 automatically
 
       - name: Setup Node
-        uses: actions/setup-node@v3  # Ensure Node.js 20
+        uses: actions/setup-node@v3  # Ensures Node.js 20
         with:
-          node-version: 20  # Set the Node.js version to 20
+          node-version: 20  # Explicitly use Node.js 20
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -26,7 +26,7 @@ jobs:
         run: npm run build
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3  # Latest version, runs on Node.js 20 by default
+        uses: actions/upload-artifact@v3  # This will run on Node.js 20 automatically
         with:
           name: production-files
           path: ./dist
@@ -39,7 +39,7 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3  # Latest version, runs on Node.js 20 by default
+        uses: actions/download-artifact@v3  # This will run on Node.js 20 automatically
         with:
           name: production-files
           path: ./dist
