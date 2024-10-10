@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy React App
 
 on:
   push:
@@ -10,14 +10,17 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
 
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true  # Opt into Node.js 20 early
+
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3  # This will now run on Node.js 20
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20  # Explicitly using Node.js 20
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -35,11 +38,10 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: production-files
           path: ./dist
